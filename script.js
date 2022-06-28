@@ -42,3 +42,8 @@ console.log(Fruits[0]);
 Fruits[0]= "Nothing";
 console.log(Fruits);
 
+function forUse (value){
+    console.log(value);
+}
+Fruits.forEach(forUse);
+console.log("finished");
