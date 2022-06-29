@@ -61,3 +61,8 @@ person[0];
 console.log(person);  //Arrays are a special kind of objects, with numbered indexes.
 
 console.log(Array.isArray(person)); //solution for array and object ideantifi 
+console.log(person instanceof Array); //another way
+
+const fruitsIteam = ["Banana", "Orange", "Apple", "Mango"];
+fruitsIteam.splice(2, 0, "Lemon", "Kiwi"); //The splice() method adds and/or removes more than one value in array elements. 
+console.log(fruitsIteam);
