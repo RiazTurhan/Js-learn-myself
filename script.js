@@ -66,3 +66,46 @@ console.log(person instanceof Array); //another way
 const fruitsIteam = ["Banana", "Orange", "Apple", "Mango"];
 fruitsIteam.splice(2, 0, "Lemon", "Kiwi"); //The splice() method adds and/or removes more than one value in array elements. 
 console.log(fruitsIteam);
+
+const AllFruits = Fruits.concat(fruitsIteam); // this concat property use to add 2 array together.
+console.log(AllFruits);
+
+Fruits.sort();
+console.log(Fruits); //this methods sorts an array alphabetically
+console.log(typeof Fruits); //this methods sorts an array alphabetically
+
+fruitsIteam.reverse()
+console.log(fruitsIteam);
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){
+        return a - b
+    });
+    console.log(points); // if we dclrd function inside sort then array to be aline and Use the same trick to sort an array descending b - a//
+   
+    const Numbers = [45, 31, 20, 14, 2, 3, 9]
+
+    function myNumbers(value, index , array){
+        console.log(value)
+        console.log(index)
+        console.log(array)
+        console.log("==============") //use for.each lteration 
+    }
+
+    //use map() lteration on array
+
+    Numbers.forEach(myNumbers);
+
+    function newArray(value){
+        return value * 2;
+    }
+    const NewArray = Numbers.map(newArray);
+    console.log(NewArray);
+
+// array filter() leteration
+
+    function NeedBigNum(value){
+        return value < 20;
+    }
+    const FilterNum = Numbers.filter(NeedBigNum);
+    console.log(FilterNum);
