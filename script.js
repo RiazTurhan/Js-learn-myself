@@ -109,3 +109,14 @@ points.sort(function(a, b){
     }
     const FilterNum = Numbers.filter(NeedBigNum);
     console.log(FilterNum);
+
+    // reduce() letaration
+
+    const reducePractice = [10 , 20, 36, 65, 12];
+
+    function totalReduce(total, value){
+        return total + value;
+        
+    }
+    const totalValu = reducePractice.reduce(totalReduce);
+    console.log(totalValu);
