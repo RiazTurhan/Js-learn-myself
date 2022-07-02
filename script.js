@@ -120,3 +120,17 @@ points.sort(function(a, b){
     }
     const totalValu = reducePractice.reduce(totalReduce);
     console.log(totalValu);
+
+    //use date concept syntex
+
+    const d = new Date();
+    month = d.getMonth();
+    console.log(month);
+
+    console.log(Math.PI);
+
+    //ternary operator
+
+    let a = 18;
+    console.log((a < 20) ? "You are adult!" : "You are not adult")
+   
