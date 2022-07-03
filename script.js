@@ -133,4 +133,27 @@ points.sort(function(a, b){
 
     let a = 18;
     console.log((a < 20) ? "You are adult!" : "You are not adult")
-   
+
+
+// while loop , iteration
+
+    let i = 0;
+    while (i < 20){
+        console.log("Hello World");
+        i++
+    }
+   // do while loop 
+
+   let loopNum = 1;
+   do{
+    console.log("hello " + loopNum);
+    loopNum ++
+   } while (loopNum <= 5);
+
+   // for while loop
+
+   for (let forLop = 1; forLop <= 5; forLop++){
+    console.log("It's Complete " + forLop);
+   }
+
+    
